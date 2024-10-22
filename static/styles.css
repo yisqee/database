@@ -1,0 +1,56 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif; /* 设置字体 */
+    background-color: #f4f4f4; /* 设置背景颜色 */
+    padding: 20px;
+}
+
+/* Form Styles */
+.form-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 300px; /* 设置表单宽度 */
+    margin: 0 auto; /* 居中表单 */
+}
+
+/* Input Styles */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: calc(100% - 24px); /* 输入框宽度为容器宽度减去内边距 */
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block; /* 确保输入框单独一行 */
+    border: 1px solid #ccc; /* 边框颜色 */
+    border-radius: 4px; /* 边框圆角 */
+    box-sizing: border-box; /* 包括内边距和边框在内的宽度计算 */
+}
+
+/* Button Styles */
+button {
+    width: 100%; /* 按钮宽度与输入框相同 */
+    padding: 10px;
+    border: none; /* 无边框 */
+    background-color: #007BFF; /* 蓝色背景 */
+    color: white;
+    border-radius: 4px;
+    cursor: pointer; /* 鼠标悬停时显示指针 */
+    font-size: 16px; /* 文字大小 */
+    text-transform: uppercase; /* 大写字母 */
+    margin-top: 10px; /* 上边距 */
+}
+
+button:hover {
+    background-color: #0056b3; /* 按钮鼠标悬停颜色 */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .form-container {
+        width: 100%; /* 在小屏幕上表单宽度为100% */
+        padding: 10px;
+    }
+}
